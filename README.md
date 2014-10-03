@@ -1,5 +1,7 @@
 # mongoose-timestamps
 
+[![wercker status](https://app.wercker.com/status/382ece796df1c7290ca81beef15a002d/m "wercker status")](https://app.wercker.com/project/bykey/382ece796df1c7290ca81beef15a002d)
+
 ensure mongoose models timestamps are up to date
 
 ### Installation
