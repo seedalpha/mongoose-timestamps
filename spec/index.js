@@ -2,6 +2,8 @@ var mongoose = require('mongoose');
 var timestamps = require('../');
 var should = require('chai').should();
 
+var host = process.env.WERCKER_MONGODB_HOST || 'localhost:27017';
+  
 describe('mongoose timestamps (plugin)', function() {
   
   before(function() {
@@ -11,7 +13,7 @@ describe('mongoose timestamps (plugin)', function() {
   });
   
   before(function() {
-    mongoose.connect('mongodb://localhost:27017/test-mongoose-timestamps');
+    mongoose.connect('mongodb://' + host + '/test-mongoose-timestamps');
   });
     
   it('should add timestamps on creation', function(done) {
