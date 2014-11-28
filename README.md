@@ -4,6 +4,12 @@
 
 ensure mongoose models timestamps are up to date
 
+### Changelog
+
+`1.1.0`:
+
+- Add `deletedAt` date field to default schema
+
 ### Installation
 
     $ npm install git+ssh://git@github.com:seedalpha/mongoose-timestamps.git

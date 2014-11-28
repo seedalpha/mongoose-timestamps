@@ -38,4 +38,12 @@ describe('mongoose timestamps (plugin)', function() {
       done();
     }.bind(this));
   });
+  
+  it('should add deletedAt timestamp', function(done) {
+    this.robot.deletedAt = Date.now();
+    this.robot.save(function(error, robot) {
+      robot.deletedAt.should.equal(this.robot.deletedAt);
+      done();
+    }.bind(this));
+  });
 });
