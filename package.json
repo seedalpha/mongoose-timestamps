@@ -1,5 +1,5 @@
 {
-  "name": "mongoose-timestamps",
+  "name": "seed-mongoose-timestamps",
   "version": "1.1.0",
   "description": "ensure mongoose models timestamps are up to date",
   "main": "lib/mongoose-timestamps/index.js",
